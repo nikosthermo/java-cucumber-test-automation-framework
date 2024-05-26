@@ -1,6 +1,0 @@
-com/saucedemo/steps/AuthenticationSteps.class
-com/saucedemo/steps/MenuSteps.class
-com/saucedemo/steps/CartSteps.class
-com/saucedemo/steps/CheckoutSteps.class
-com/saucedemo/steps/ProductsSteps.class
-com/saucedemo/runners/RunCucumberTest.class
