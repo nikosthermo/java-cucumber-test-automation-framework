@@ -42,9 +42,6 @@ src
 | | | |-- menu.feature
 | | |-- testData
 | | | |-- credentials.json
-target
-|-- cucumber-reports.html
-|- cucumber.json
 pom.xml
 readme.md
 LICENSE
