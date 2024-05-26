@@ -1,0 +1,8 @@
+com/saucedemo/pages/MenuPage.class
+com/saucedemo/pages/CheckoutPage.class
+com/saucedemo/pages/CartPage.class
+com/saucedemo/pages/BasePage.class
+com/saucedemo/pages/ProductsPage.class
+com/saucedemo/utils/TestDataUtil.class
+com/saucedemo/utils/DriverManager.class
+com/saucedemo/pages/LoginPage.class

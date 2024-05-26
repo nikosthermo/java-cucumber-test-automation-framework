@@ -4,11 +4,13 @@ import com.saucedemo.pages.LoginPage;
 import com.saucedemo.pages.MenuPage;
 import com.saucedemo.pages.ProductsPage;
 import com.saucedemo.utils.DriverManager;
+import com.saucedemo.utils.TestDataUtil;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.junit.Assert;
+import java.util.Map;
 
 public class MenuSteps {
 
@@ -21,8 +23,9 @@ public class MenuSteps {
         driverManager = new DriverManager();
         driver = driverManager.initializeDriver();
         driver.get("https://www.saucedemo.com/");
+        Map<String, String> credentials = TestDataUtil.getCredentials("standard_user");
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("standard_user", "secret_sauce");
+        loginPage.login(credentials.get("username"), credentials.get("password"));
         ProductsPage productsPage = new ProductsPage(driver);
         Assert.assertTrue(productsPage.isProductListDisplayed());
         menuPage = new MenuPage(driver);

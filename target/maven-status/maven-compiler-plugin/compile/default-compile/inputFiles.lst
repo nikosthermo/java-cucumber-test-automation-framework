@@ -1,0 +1,8 @@
+/Users/nikosthermogiannis/Repos/java-cucumber-test-automation-framework/src/main/java/com/saucedemo/pages/BasePage.java
+/Users/nikosthermogiannis/Repos/java-cucumber-test-automation-framework/src/main/java/com/saucedemo/pages/CartPage.java
+/Users/nikosthermogiannis/Repos/java-cucumber-test-automation-framework/src/main/java/com/saucedemo/pages/CheckoutPage.java
+/Users/nikosthermogiannis/Repos/java-cucumber-test-automation-framework/src/main/java/com/saucedemo/pages/LoginPage.java
+/Users/nikosthermogiannis/Repos/java-cucumber-test-automation-framework/src/main/java/com/saucedemo/pages/MenuPage.java
+/Users/nikosthermogiannis/Repos/java-cucumber-test-automation-framework/src/main/java/com/saucedemo/pages/ProductsPage.java
+/Users/nikosthermogiannis/Repos/java-cucumber-test-automation-framework/src/main/java/com/saucedemo/utils/DriverManager.java
+/Users/nikosthermogiannis/Repos/java-cucumber-test-automation-framework/src/main/java/com/saucedemo/utils/TestDataUtil.java

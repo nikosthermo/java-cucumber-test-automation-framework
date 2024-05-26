@@ -3,11 +3,13 @@ package com.saucedemo.steps;
 import com.saucedemo.pages.LoginPage;
 import com.saucedemo.pages.ProductsPage;
 import com.saucedemo.utils.DriverManager;
+import com.saucedemo.utils.TestDataUtil;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.junit.Assert;
+import java.util.Map;
 
 public class AuthenticationSteps {
 
@@ -24,9 +26,10 @@ public class AuthenticationSteps {
         loginPage = new LoginPage(driver);
     }
 
-    @When("the user enters username {string} and password {string}")
-    public void the_user_enters_username_and_password(String username, String password) {
-        loginPage.login(username, password);
+    @When("the user logs in as {string}")
+    public void the_user_logs_in_as_string(String userType) {
+        Map<String, String> credentials = TestDataUtil.getCredentials(userType);
+        loginPage.login(credentials.get("username"), credentials.get("password"));
     }
 
     @Then("the user should be redirected to the products page")

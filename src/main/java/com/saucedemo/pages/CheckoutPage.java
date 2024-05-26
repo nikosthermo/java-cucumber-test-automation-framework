@@ -18,6 +18,12 @@ public class CheckoutPage extends BasePage {
     @FindBy(id = "continue")
     private WebElement continueButton;
 
+    @FindBy(id = "finish")
+    private WebElement finishButton;
+
+    @FindBy(id = "checkout_complete_container")
+    private WebElement checkoutComplete;
+
     public CheckoutPage(WebDriver driver) {
         super(driver);
     }
@@ -33,7 +39,15 @@ public class CheckoutPage extends BasePage {
         return firstNameInput.isDisplayed();
     }
 
-    public boolean isContinueButtonDisplayed() {
-        return continueButton.isDisplayed();
+    public boolean isFinishButtonDisplayed() {
+        return finishButton.isDisplayed();
+    }
+
+    public void clickFinishButton() {
+        finishButton.click();
+    }
+
+    public boolean isCheckoutCompleteDisplayed() {
+        return checkoutComplete.isDisplayed();
     }
 }

@@ -39,8 +39,14 @@ public class CheckoutSteps {
 
     @Then("the user should be able to continue to the next step")
     public void the_user_should_be_able_to_continue_to_the_next_step() {
-        // Assuming the next step has some identifiable element
-        Assert.assertTrue(checkoutPage.isContinueButtonDisplayed());
+        Assert.assertTrue(checkoutPage.isFinishButtonDisplayed());
+        driverManager.quitDriver();
+    }
+
+    @Then("the user should be able to finish the checkout")
+    public void the_user_should_be_able_to_finish_the_checkout() {
+        checkoutPage.clickFinishButton();
+        Assert.assertTrue(checkoutPage.isCheckoutCompleteDisplayed());
         driverManager.quitDriver();
     }
 }
